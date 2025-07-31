@@ -5,7 +5,7 @@ _Note: This is a **frontend-only** demo project — no backend or database funct
 
 ## Live Demo
 
-> Coming soon or [insert link if deployed]
+> [link](https://lurevia-store.vercel.app/)
 
 ## Tech Stack
 
