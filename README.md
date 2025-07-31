@@ -1,29 +1,74 @@
-# Lurevia Store E-commerce Website
-  
-This is a project built with [Chef](https://chef.convex.dev) using [Convex](https://convex.dev) as its backend.
- You can find docs about Chef with useful information like how to deploy to production [here](https://docs.convex.dev/chef).
-  
-This project is connected to the Convex deployment named [`amicable-mule-681`](https://dashboard.convex.dev/d/amicable-mule-681).
-  
-## Project structure
-  
-The frontend code is in the `app` directory and is built with [Vite](https://vitejs.dev/).
-  
-The backend code is in the `convex` directory.
-  
-`npm run dev` will start the frontend and backend servers.
+# Lurevia Store
 
-## App authentication
+A modern, responsive leather shoe e-commerce website built using **React**, **Vite**, **Tailwind CSS**, and **Sonner** — designed for showcasing premium products with a sleek UI and essential e-commerce features.  
+_Note: This is a **frontend-only** demo project — no backend or database functionality is included._
 
-Chef apps use [Convex Auth](https://auth.convex.dev/) with Anonymous auth for easy sign in. You may wish to change this before deploying your app.
+## Live Demo
 
-## Developing and deploying your app
+> Coming soon or [insert link if deployed]
 
-Check out the [Convex docs](https://docs.convex.dev/) for more information on how to develop with Convex.
-* If you're new to Convex, the [Overview](https://docs.convex.dev/understanding/) is a good place to start
-* Check out the [Hosting and Deployment](https://docs.convex.dev/production/) docs for how to deploy your app
-* Read the [Best Practices](https://docs.convex.dev/understanding/best-practices/) guide for tips on how to improve you app further
+## Tech Stack
 
-## HTTP API
+- **Frontend:** React 18 (with Vite)  
+- **Styling:** Tailwind CSS  
+- **UI Components:** Custom React components, Sonner for toast notifications  
+- **Routing:** React Router DOM  
+- **State Management:** React Context API (for cart and simple authentication)  
+- **Others:** TypeScript, ESLint, Prettier  
 
-User-defined http routes are defined in the `convex/router.ts` file. We split these routes into a separate file from `convex/http.ts` to allow us to prevent the LLM from modifying the authentication routes.
+## Features
+
+- Home, About, Products, Product Details, Contact, Cart, Checkout, Login, and Signup pages  
+- Frontend-only Cart system with add, update, remove, and clear functionality  
+- Product data handled locally via a static products data file (`src/data/products.ts`)  
+- Responsive, mobile-first design with a clean and modern UI  
+- Simple frontend-only authentication simulation with sign in, sign up, and anonymous login  
+- Toast notifications for user feedback using Sonner  
+- Mobile navigation menu with toggling and active link highlighting  
+- Component-driven architecture for reusability and maintainability  
+
+## Getting Started
+
+### Prerequisites
+
+Make sure you have **Node.js (v18+)** and **npm** or **yarn** installed.
+
+### Installation
+```
+git clone https://github.com/UditSax3na/ecomleatherwebsite.git
+cd ecomleatherwebsite
+npm install # or yarn install
+```
+### Run the Dev Server
+```
+npm run dev # or yarn dev
+```
+
+>The app will be available at `http://localhost:5173`
+
+## Build for Production
+
+```
+npm run build
+```
+
+To preview the production build:
+```
+npm run preview
+```
+
+## Project Structure
+```
+/src
+├─ /components → UI & layout components (Navbar, ProductCard, SignOutButton, etc.)
+├─ /context → React Contexts (CartContext, AuthContext if implemented)
+├─ /data → Static products data file (products.ts)
+/pages → Route pages (Home, ProductsPage, ProductDetailsPage, Cart, Checkout, Login, Signup, etc.)
+/styles → Global Tailwind CSS and custom styles
+/main.tsx → App entry point with routing setup
+```
+
+## Author
+
+**Udit Saxena**  
+GitHub: [@UditSax3na](https://github.com/UditSax3na)
