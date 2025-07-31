@@ -36,7 +36,7 @@ Make sure you have **Node.js (v18+)** and **npm** or **yarn** installed.
 ### Installation
 ```
 git clone https://github.com/UditSax3na/ecomleatherwebsite.git
-cd ecomleatherwebsite
+cd LureviaStore
 npm install # or yarn install
 ```
 ### Run the Dev Server
